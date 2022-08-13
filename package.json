@@ -6,7 +6,7 @@
     "start": "node src"
   },
   "keywords": [],
-  "author": "Nicolas Pasquet <npasquet@users.noreply.github.com>",
+  "author": "Nicolas Pasquet <4588347+npasquet@users.noreply.github.com>",
   "license": "MIT",
   "private": true,
   "dependencies": {
