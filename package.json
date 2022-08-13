@@ -1,28 +1,40 @@
 {
-  "name": "backend",
+  "name": "ebook-metadata-graphql",
   "version": "1.0.0",
-  "description": "apollo server scaffolding",
   "scripts": {
-    "start": "node src"
+    "prepare": "husky install",
+    "dev": "node -r @swc-node/register src/index.ts",
+    "lint": "eslint --cache src/**",
+    "lint:fix": "eslint --cache --fix src/**",
+    "prettier:write": "prettier --ignore-path ./.gitignore --write .",
+    "prettier:check": "prettier --ignore-path ./.gitignore --check ."
   },
-  "keywords": [],
-  "author": "Nicolas Pasquet <4588347+npasquet@users.noreply.github.com>",
-  "license": "MIT",
-  "private": true,
   "dependencies": {
-    "apollo-server": "^2.9.15",
-    "graphql": "^14.5.8"
+    "apollo-server": "^3.10.1",
+    "apollo-server-core": "^3.10.1",
+    "graphql": "^16.5.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0 || ^6.1.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "1.19.1"
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@swc-node/register": "^1.5.1",
+    "@tsconfig/node16": "^1.0.3",
+    "@types/node": "^18.7.3",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1",
+    "typescript": "^4.7.4"
   },
+  "packageManager": "yarn@3.2.2",
   "volta": {
     "node": "16.16.0",
-    "yarn": "1.22.19"
+    "yarn": "3.2.2"
   }
 }
