@@ -1,1 +1,1 @@
-# apollo-server-scaffolding
+# ebook-metadata-graphql
